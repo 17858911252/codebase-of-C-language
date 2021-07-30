@@ -36,9 +36,8 @@ int main()
 	char b = 'B';
 	printf("%c\n", b);
 	double c = 3.141592;
-	printf("%f\n", c);
-    #define d 200
+	printf("%f\n", c)；
+        #define d 200
 	printf("%d\n", d);
-	int arr[2] = {1,2};
 	return 0;
 }
