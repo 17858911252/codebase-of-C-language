@@ -27,3 +27,26 @@ int main()
 	printf("%c\n" ,'\x61');
 	return 0;
 }
+
+
+#define _CRT_SECURE_NO_WARNINGS 
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int input = 0;
+	printf("你能卷赢吗？（1/0)>:");
+	scanf("%d", &input);
+	if(input == 1)
+		printf("能\n");
+	else
+		printf("不能\n");
+	int day = 1;
+	while (day <=365)
+	{
+		printf("继续卷,%d\n",day);
+			day++;
+	}
+	if (day > 365)
+		printf("你已经是卷王了\n");
+	return 0;
