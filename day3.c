@@ -26,3 +26,20 @@ int main()
 	return 0;
 }
  
+#define _CRT_SECURE_NO_WARNINGS 
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int a = 5 / 2;
+	int b = 5 % 2;
+	printf("%d\n%d\n", a, b);
+	int c = 1;
+	int d = c << 1;
+	printf("%d\n", d);
+	int e = c&d;
+	int f = c | d;
+	int g = c^d;
+	printf("%d\n%d\n%d\n", e,f,g);
+	return 0;
+}
