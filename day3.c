@@ -34,7 +34,7 @@ int main()
 	int a = 5 / 2;
 	int b = 5 % 2;
 	printf("%d\n%d\n", a, b);
-	int c = 1;
+	int c = 2;
 	int d = c << 1;
 	printf("%d\n", d);
 	int e = c&d;
