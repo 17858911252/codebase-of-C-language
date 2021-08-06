@@ -13,3 +13,21 @@ int main()
 	printf("%d\n", d);
 	return 0;
 }
+ 
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+	int a = 0;
+	int b = 8;
+	int c = a&&b;
+	printf("%d\n", c);
+	c = a || b;
+	printf("%d\n", c);
+	int x = 0;
+	int y = 0;
+	scanf("%d%d", &x,&y);
+	int max = x > y ? x : y;
+	printf("%d\n", max);
+		return 0;
+}
