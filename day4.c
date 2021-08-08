@@ -31,3 +31,23 @@ int main()
 	printf("%d\n", max);
 		return 0;
 }
+  
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+void test()
+{
+	static int a = 1;
+	a++;
+	printf("%d\n", a);
+}
+static int b = 0;
+int main()
+{
+	int i = 0;
+	while (i < 5)
+	{
+		test();
+		i++;
+	}
+	return 0;
+}
