@@ -37,3 +37,28 @@ int main()
 	printf("%s\n", B.name);
 	return 0;
 }
+
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+	int a;
+	scanf("%d", &a);
+	if (a % 2 == 1)
+		printf("a为奇数\n");
+	else
+		printf("a为偶数\n");
+		int a ;
+	        int b;
+	scanf("%d%d", &a,&b);
+	if (a==1)
+	{
+		if (b == 2)
+			printf("hello");
+		else
+			printf("again");
+	}
+	else
+		printf("goodbye");
+        return 0;
+}
