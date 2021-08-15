@@ -33,6 +33,9 @@ int main()
 	case 2:
 		printf("方案2\n");
 		break;
+        default:
+		printf("备用方案\n");
+		break;
 	}
 	return 0;
 }
