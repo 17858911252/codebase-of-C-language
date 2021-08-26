@@ -25,3 +25,61 @@ int main()
 		printf("该值在数组中不存在\n");
 	return 0;
 }
+
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+#include<Windows.h>
+int main()
+{
+	char arr1[] = "welcome to china";
+	char arr2[] = "################";
+	int left = 0;
+	int right = strlen(arr1) - 1;
+	while (left <= right)
+	{
+
+		arr2[left] = arr1[left];
+		arr2[right] = arr1[right];
+		printf("%s\n", arr2);
+		Sleep(1000);//睡眠一秒
+		system("cls");//清空屏幕
+		left++;
+		right--;
+	}
+	printf("%s\n", arr2);
+	return 0;
+}
+
+
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+#include<Windows.h>
+int main()
+{
+	char password[20] = "0";
+	int i = 0;
+	for (i = 1; i <= 3; i++)
+	{
+		printf("请输入密码：");
+		scanf("%s", &password);
+		if (strcmp(password, "123456") == 0)
+		{
+			printf("密码正确\n");
+			break;
+		}
+		else
+		{
+			printf("密码错误,请重试\n");
+			Sleep(1300);
+			system("cls");
+			Sleep(500);
+		}
+	}
+	if (i != 4)
+		printf("登录成功\n");
+	if (i == 4)
+		printf("多次输入密码错误，请稍后再试\n");
+		return 0;
+}
