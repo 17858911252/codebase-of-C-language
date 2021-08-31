@@ -35,3 +35,20 @@ int main()
 	}
 	return 0;
 }
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+	int m;
+	int n;
+	scanf("%d%d", &m, &n);
+	int t;
+	while (m % n != 0)
+	{
+		t = m % n;
+		m = n;
+		n = t;
+	}
+	printf("最大公约数是%d\n", t);
+	return 0;
+}
