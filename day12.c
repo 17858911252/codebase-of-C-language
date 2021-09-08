@@ -105,13 +105,16 @@ int search(int arr[],int x,int y)
 }
 int main()
 {
-	int key = 5;
+	int key = 0;
+	again:
+        scanf("%d",&key);
 	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
 	int sz = sizeof(arr) / sizeof(arr[0]);
 		int ret = search(arr,key, sz);
 		if (ret == -1)
 		{
 			printf("该数在数组中不存在\n");
+			goto again;
 		}
 		else
 		printf("下标为%d", ret);
