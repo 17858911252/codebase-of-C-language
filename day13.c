@@ -25,4 +25,5 @@ int main()
 	char arr2[20] = { "hello world" };
 	printf("%s\n", strcpy(arr1, arr2));
 	printf("%d", printf("%d", printf("%d", 43)));
-	return
+	return 0;
+}
