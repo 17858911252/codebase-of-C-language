@@ -62,3 +62,56 @@ int main()
 	print(num);
 	return 0;
 }
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int fac(int n)
+{
+	if (n <= 1)
+		return 1;
+	else
+		return n * fac(n - 1);
+}
+
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	printf("%d\n", fac(n));
+	return 0;
+}
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+int str(char* n)
+{
+	if (*n != '\0')
+		return 1 + str(n + 1);
+	else
+		return 0;
+}
+int main()
+{
+	char arr[] = "hello world";
+	printf("%d\n", str(arr));
+	return 0;
+}
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+int str(char* n)
+{
+	int i = 0;
+	while(*n!='\0')
+	{
+		i++;
+		n++;
+	}
+	return i;
+}
+
+int main()
+{
+	char arr[] = "hello world" ;
+	printf("%d\n", str(arr));
+	return 0;
+}
