@@ -115,3 +115,36 @@ int main()
 	printf("%d\n", str(arr));
 	return 0;
 }
+
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+	int i = 0;
+	double sum = 0.0;
+	int flag = 1;
+	for (i = 1; i <= 100; i++)
+	{
+		sum += flag * 1.0 / i;
+		flag = -flag;
+	}
+	printf("%lf", sum);
+	return 0;
+}
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+int main()
+{
+	int i = 1;
+	double k = 0.0;
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 2 != 0)
+			k+= 1.0 / i;
+		else
+			k-= 1.0 / i;
+	}
+	printf("%lf", k);
+	return 0;
+}
