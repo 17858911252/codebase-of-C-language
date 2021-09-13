@@ -60,3 +60,18 @@ int main()
 	printf("%lf", sum);
 	return 0;
 }
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+	int arr[10] = {0};
+	int* p = arr;
+	int i=0;
+	for (i = 0; i < 10; i++)
+	{
+		arr[i] = i;
+		printf("%d\n", *p);
+		p++;
+	}
+	return 0;
+}
