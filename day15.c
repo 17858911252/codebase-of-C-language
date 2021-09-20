@@ -24,6 +24,6 @@ int main()
 	rank(arr,sz);
 	printf("%p\n", &arr);
 	printf("%p\n", arr);
-	printf("%p\n", arr[0]);
+	printf("%p\n", &arr[0]);
 	return 0;
 }
