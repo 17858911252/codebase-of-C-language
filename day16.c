@@ -1,22 +1,44 @@
-#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+#include<stdlib.h>
+#include<Windows.h>
 int main()
-
 {
-
-    /* 定义需要计算的日期 */
-
     int date = 0;
     int year ;
     printf("year=");
+    again:
+    scanf("%d", &year);
+    if (year < 1)
+    {
+        printf("error");
+        Sleep(2000);
+        system("cls");
+        goto again;
+    }
     scanf("%d", &year);
     int month;
     printf("month=");
+    again1:
     scanf("%d", &month);
+    if (month > 12 || month < 1)
+    {
+        printf("error");
+        Sleep(2000);
+        system("cls");
+        goto again1;
+    }
+    again2:
     int day;
     printf("day=");
     scanf("%d", &day);
+    if ((month == 2 && day > 29) || (day > 31))
+    {
+        printf("error");
+        Sleep(2000);
+        system("cls");
+        goto again2;
+    }
     switch (month)
     {
 
@@ -64,12 +86,6 @@ int main()
         date += day;
 
         printf("%d年%d月%d日是该年的第%d天", year, month, day, date);
-
-        break;
-
-    default:
-
-        printf("error");
 
         break;
 
