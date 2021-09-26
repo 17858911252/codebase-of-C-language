@@ -50,3 +50,14 @@ int main()
     printf("打的总费用：%.1f\n", taxifee(9, 12) + taxifee(1, 12));
     return 0;
 }
+#include<stdio.h>
+int main()
+{
+	char arr1[] = { 'a','b','c','\0'};
+	char arr2[] = "abc";
+		printf("%s\n", arr1);
+		puts(arr2);
+		char a = getchar();
+		putchar(a);
+		return 0;
+}
