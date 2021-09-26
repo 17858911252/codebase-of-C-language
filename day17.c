@@ -61,3 +61,19 @@ int main()
 		putchar(a);
 		return 0;
 }
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char arr1[10] = "abc";
+	char arr2[10] = "ab";
+	char arr3[10] = "abcd";
+	char arr4[10] = "abc";
+	printf("a的ASCII是%d\n", 'a');
+	printf("%d\n", strcmp(arr1, arr2));
+	printf("%d\n", strcmp(arr1, arr3));
+	printf("%d\n", strcmp(arr1, arr4));
+	strcpy_s(arr1, arr3);
+	printf("%s\n", arr1);
+	return 0;
+}
