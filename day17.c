@@ -77,3 +77,19 @@ int main()
 	printf("%s\n", arr1);
 	return 0;
 }
+#include<stdio.h>
+int main()
+{
+	//计算1-1/2+1/3-1/4+-----1/100
+	int deno = 2;
+	int sign = 1;
+	double sum = 1;
+	double term;
+	for (deno = 2; deno <= 100; deno++)
+	{
+		sign *= -1;
+		term = sign * (1.0/deno);
+		sum += term;
+	}
+	printf("1-1/2+1/3-1/4+ ---- -1/100=%lf\n", sum);
+}
