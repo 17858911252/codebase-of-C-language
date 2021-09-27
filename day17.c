@@ -93,3 +93,20 @@ int main()
 	}
 	printf("1-1/2+1/3-1/4+ ---- -1/100=%lf\n", sum);
 }
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main()
+{
+	srand((unsigned)time(NULL));
+	int i;
+	int j;
+	for (i = 1; i <= 100; i++)
+	{
+		int j = rand() % 200 + 1;
+		printf("%-5d", j);
+		if (i %10 == 0)
+			printf("\n");
+	}
+	return 0;
+}
