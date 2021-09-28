@@ -24,3 +24,12 @@ int main()
 	}
 	return 0;
 }
+#include<stdio.h>
+int main()
+{
+	int num[] = { 1,2,3,4,5,6};
+	int *p = num;
+	int **pp = &p;
+	printf("%d\n", *(*pp));
+	return 0;
+}
