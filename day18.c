@@ -33,3 +33,16 @@ int main()
 	printf("%d\n", *(*pp));
 	return 0;
 }
+#include<stdio.h>
+int main()
+{
+	int arr[] = { 1,2,3,4,5 };
+	int i;
+	int* p = arr;
+	int **pp = &p;
+	for (i = 1; i <= 5; i++)
+	{
+		printf("%d,", **pp);//**pp=*p
+		p++;
+	}
+	return 0;
