@@ -65,3 +65,30 @@ int main()
 	}
 	return 0;
 }
+#include<stdio.h>
+void swap(int *x, int *y)
+{
+	int t;
+	t = *x;
+	*x = *y;
+	*y = t;
+}
+int main()
+{
+	int nums[2][2] = 
+	{
+		{1, 2},
+		{2, 3}
+	};
+	int* p[2] = { nums[0], nums[1] };
+	printf("nums[0][0] = %d\n", **p);
+	printf("nums[1][0] = %d\n", **(p + 1));
+	printf("nums[0][1] = %d\n", *(*p + 1));
+	printf("nums[1][1] = %d\n", *(*(p + 1)+1));
+	int x, y;
+	scanf_s("%d%d", &x, &y);
+	printf("x=%d,y=%d\n", x, y);
+	swap(&x, &y);
+	printf("x=%d,y=%d\n", x, y);
+	return 0;
+}
