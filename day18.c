@@ -102,3 +102,25 @@ int main()
 	printf("%d %d %d \n",strcmp(arr1, arr2),strcmp(arr1,arr3),strcmp(arr1,arr1));
 	return 0;
 }
+#include<stdio.h>
+#include<string.h>
+int *as(int x,int y)
+{
+	int z = x + y;
+	return &z;
+}
+int* az(int x, int y)
+{
+	int z = x + y;
+	int* p = &z;
+	return p;
+}
+int main()
+{
+	int x, y;
+		scanf_s("%d%d", &x, &y);
+	int* p = as(x, y);
+	printf("x+y=%d\n", *p);
+	printf("x+y=%d\n", *az(x, y));
+	return 0;
+}
