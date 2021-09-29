@@ -92,3 +92,13 @@ int main()
 	printf("x=%d,y=%d\n", x, y);
 	return 0;
 }
+#include<string.h>
+#include<stdio.h>
+int main()
+{
+	char arr1[] = "abcde";
+	char arr2[] = "abcdefg";
+	char arr3[] = "abc";
+	printf("%d %d %d \n",strcmp(arr1, arr2),strcmp(arr1,arr3),strcmp(arr1,arr1));
+	return 0;
+}
