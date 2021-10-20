@@ -56,3 +56,50 @@ int main()
 	}
 	return 0;
 }
+#include<stdio.h>
+int main()
+{
+	int grade;
+	scanf_s("%d", &grade);
+	if (grade >= 90)
+		printf("A");
+	else if (grade >= 80)
+		printf("B");
+	else if (grade >= 70)
+		printf("C");
+	else if (grade >= 60)
+		printf("D");
+	else
+		printf("E");
+	return 0;
+}
+	#include<stdio.h>
+        int main()
+	{
+	int x, y;
+	scanf_s("%d", &x);
+	if (x < 1)
+		y = x;
+	else if (x < 10)
+		y = 2 * x - 1;
+	else
+		y = 3 * x - 11;
+	printf("y=%d\n", y);
+	return 0;
+}
+#include<stdio.h>
+int MAX(int x, int y)
+{
+	if (x < y)
+		return y;
+}
+int main()
+{
+	int a, b, c;
+	scanf_s("%d%d%d", &a, &b, &c);
+	int max =a;
+	max = MAX(max, b);
+	max = MAX(max, c);
+	printf("最大的数是%d", max);
+	return 0;
+}
