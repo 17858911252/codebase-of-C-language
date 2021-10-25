@@ -41,3 +41,32 @@ int main()
 	printf("\nn是%d位数\n", count);
 	return 0;
 }
+#include<stdio.h>
+int main()
+{
+	int f1 = 0, f2 = 1,f3,i;
+	printf("%d %d ", f1, f2);
+	for (i = 1; i <= 38; i++)
+	{
+		f3 = f1 + f2;
+		printf("%d ", f3);
+		f1 = f2;
+		f2 = f3;
+	}
+	return 0;
+
+}
+#include<stdio.h>
+int main()
+{
+	int i,j;
+	for (i = 1; i <= 9; i++)
+	{
+		for (j = 1; j <= i; j++)
+		{
+			printf("%d*%d=%-2d  ", i,j , i * j);
+		}
+		printf("\n");
+	}
+	return 0;
+}
