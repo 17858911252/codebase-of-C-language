@@ -70,3 +70,27 @@ int main()
 	}
 	return 0;
 }
+#include<stdio.h>
+int main()
+{
+	int m, n;
+	scanf_s("%d%d", &m, &n);
+	int t = m < n ? m : n;
+	int k = m > n ? m : n;
+	while (1)
+	{
+		
+		if (m % t == 0 && n % t== 0)
+			break;
+		t--;
+	}
+	while (1)
+	{
+		if (k % m == 0 && k % n == 0)
+			break;
+		k++;
+		
+	}
+	printf("最大公约数是%d,最小公倍数是%d", t,k);
+	return 0;
+}
