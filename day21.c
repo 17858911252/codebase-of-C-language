@@ -113,3 +113,49 @@ int main()
 	printf("pi=%10.8f  count=%d\n", pi,count);
 	return 0;
 }
+#include<stdio.h>
+int main()
+{
+	int a[10];
+	int i, j,k,t;
+	for (i = 0; i <= 9; i++) 
+	{
+		scanf_s("%d", &a[i]);
+	}
+	for (i = 0; i <= 8; i++)
+	{
+		k = i;
+		for (j = i + 1; j <= 9; j++)
+			if (a[k] > a[j])
+				k = j;
+		t = a[k];
+		a[k] = a[i];
+		a[i] = t;
+	}
+	for(i=0;i<=9;i++)
+	{
+		printf("%4d", a[i]);
+	}
+	return 0;
+ }
+#include<stdio.h>
+int main()
+{
+	int i,j,t;
+	int a[10];
+	for (i = 0; i <= 9; i++)
+		scanf_s("%d", &a[i]);
+	for(i=0;i<=8;i++)
+		for(j=0;j<=8-i;j++)
+			if (a[j] > a[j + 1])
+			{
+				t = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = t;
+			}
+	for (i = 0; i <= 9; i++)
+	{
+		printf("%4d", a[i]);
+	}
+	return 0;
+}
