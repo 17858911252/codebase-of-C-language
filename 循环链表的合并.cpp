@@ -30,7 +30,7 @@ LNode* creatList_R(LinkList& L, int n)
 	}
 	r->next = L;
 	return r;
-}//ºó²å·¨´´½¨Ñ­»·Á´±íÁ´±í
+}//åŽæ’æ³•åˆ›å»ºå¾ªçŽ¯é“¾è¡¨
 void mergeList(LinkList& A, LinkList& B)
 {
 	LinkList p = A->next;
